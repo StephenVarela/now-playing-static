@@ -9,6 +9,8 @@
 
   main{
     grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   footer{
@@ -69,11 +71,26 @@
     display: block;
   }
 
+  .movie:first-child{
+    grid-column: 1/4;
+  }
 
-  .movie:nth-child(n+1) .movie-poster {
+  .movie:first-child .movie-backdrop{
+    width: 100%;
+  }
+
+
+  .movie:nth-child(n+2) .movie-poster {
     display: block;
   }
 
+  .movie:nth-child(n+2) .movie-overview {
+    display: none;
+  }
+
+  .movie:nth-child(n+2) .movie-backdrop {
+    display: none;
+  }
 
 
 }
