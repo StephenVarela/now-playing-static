@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1140px) {
 
   /*split navigation and main into columns"*/
   body{
@@ -77,15 +77,15 @@
 
 
 
-  .movie:nth-child(n+2) .movie-poster {
+  .movie:nth-child(n+3) .movie-poster {
     display: block;
   }
 
-  .movie:nth-child(n+2) .movie-overview {
+  .movie:nth-child(n+3) .movie-overview {
     display: none;
   }
 
-  .movie:nth-child(n+2) .movie-backdrop {
+  .movie:nth-child(n+3) .movie-backdrop {
     display: none;
   }
 
