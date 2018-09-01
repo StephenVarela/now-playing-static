@@ -1,0 +1,79 @@
+@media screen and (min-width: 992px) {
+
+  /*split navigation and main into columns"*/
+  body{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding-bottom: 0;
+  }
+
+  main{
+    grid-column-start: 2;
+  }
+
+  footer{
+    grid-column: 1/3;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: white;
+  }
+
+  footer>.about{
+    background-color: black;
+    color: white;
+  }
+
+
+
+  /* NAVIGATION styles */
+  .site-header{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 100;
+    background-color: #ffffff;
+  }
+
+
+  .site-logo {
+    position: relative;
+    display: block;
+    width: 70%;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .site-nav {
+    /* position: fixed; */
+    position: relative;
+    display: grid;
+    text-align: center;
+    z-index: 100;
+  }
+  .site-nav-list{
+
+  }
+  .site-nav-item{
+    width: 100%;
+    display: block;
+  }
+
+  /*Main formatting */
+  .movie-overview{
+    display: block;
+  }
+
+
+  .movie:nth-child(n+1) .movie-poster {
+    display: block;
+  }
+
+
+
+}
